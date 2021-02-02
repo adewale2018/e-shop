@@ -50,7 +50,7 @@ class SignIn extends Component {
             label="Password"
             required
           />
-          <div className="buttons">
+          <div className="buttons text-center">
             <CustomButton type="submit"> Login</CustomButton>
             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
               {" "}

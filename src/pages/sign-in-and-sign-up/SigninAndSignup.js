@@ -4,7 +4,7 @@ import SignUp from '../../components/sign-up/SignUp'
 
 function SigninAndSignup(){
   return(
-    <div className='text-center'>
+    <div className=''>
       <SignIn />
       <SignUp />
     </div>
