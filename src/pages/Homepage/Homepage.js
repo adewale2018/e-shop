@@ -1,13 +1,13 @@
-import './Homepage.scss';
 import Directory from '../../components/directory/Directory';
+import { HomePageContainer } from './HomePage.style';
 
-function Homepage() {
+const Homepage = () => {
   return (
-    <div className="homepage d-flex flex-column align-items-center pt-4 pb-8">
+    <HomePageContainer>
       <div className="directory-menu d-flex flex-wrap justify-content-between">
         <Directory />
       </div>
-    </div>
+    </HomePageContainer>
   );
 }
 
