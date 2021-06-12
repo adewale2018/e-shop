@@ -6,13 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import CartItem from "../cart-item/CartItem";
 import CustomButton from "../custom-button/CustomButton";
 import React from "react";
-import { toggleCartVisibility } from "../../redux/cart/cart.actions";
+import { toggleCartVisibility } from "../../redux/actions/cart/cart.actions";
 import { useHistory } from "react-router-dom";
+import { getCartItems } from '../../redux/selectors/cart.selector';
 
 const CartDropdown = () => {
   const history = useHistory();
   
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector(getCartItems);
   const dispatch = useDispatch();
   
   return (

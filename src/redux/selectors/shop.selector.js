@@ -1,0 +1,1 @@
+export const getShopCollections = store => store.shop.collections;

@@ -1,0 +1,1 @@
+export const getDirectorySections = store => store.directory.sections;

@@ -2,7 +2,7 @@ import { applyMiddleware, createStore } from 'redux';
 
 import logger from 'redux-logger';
 import { persistStore } from 'redux-persist'
-import rootReducers from './rootReducers';
+import rootReducers from './reducers/rootReducers';
 
 const middlewares = [];
 if(process.env.NODE_ENV === 'development') {

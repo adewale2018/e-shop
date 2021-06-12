@@ -7,7 +7,7 @@ import {
   ImageContainer,
 } from "./CollectionItem.styles";
 
-import { addItem } from "../../redux/cart/cart.actions";
+import { addItem } from "../../redux/actions/cart/cart.actions";
 import { useDispatch } from "react-redux";
 
 const CollectionItem = (props) => {

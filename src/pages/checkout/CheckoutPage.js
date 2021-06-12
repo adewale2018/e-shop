@@ -10,13 +10,12 @@ import CheckoutItem from "../../components/checkout-item/CheckoutItem";
 import React from "react";
 import StripeCheckoutButton from "../../components/stripe/StripeCheckout";
 import { useSelector } from "react-redux";
+import { getCartItemsTotal, getCartItems } from '../../redux/selectors/cart.selector';
 
 const CheckoutPage = () => {
-  const cartItems = useSelector((state) => state.cart.cartItems);
-  const total = cartItems.reduce(
-    (accumulator, b) => accumulator + b.quantity * b.price,
-    0
-  );
+  const total = useSelector(getCartItemsTotal);
+  const cartItems = useSelector(getCartItems);
+
   return (
     <CheckoutPageContainer>
       <CheckoutHeaderContainer>

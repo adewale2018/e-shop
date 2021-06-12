@@ -10,10 +10,12 @@ import CartIcon from "../cart-icon/CartIcon";
 import { ReactComponent as Logo } from "../../assets/logo/crown.svg.svg";
 import { auth } from "../../firebase/firebase.utils";
 import { useSelector } from "react-redux";
+import { getCartHidden } from '../../redux/selectors/cart.selector';
+import { getCurrentUser } from '../../redux/selectors/user.selectors'
 
 const Header = () => {
-  const newCartVisibility = useSelector(state => state.cart.hidden)
-  const newCurrentUser = useSelector(state => state.user.currentUser);
+  const newCartVisibility = useSelector(getCartHidden)
+  const newCurrentUser = useSelector(getCurrentUser);
   return (
     <HeaderContainer>
       <LogoContainer to="/">

@@ -2,9 +2,9 @@ import {
   addItemToCart,
   deleteItemFromCart,
   removeItemFromCart,
-} from "./cart.utils";
+} from "../utils/cart.utils";
 
-import { CartActionTypes } from "./cart.types";
+import { CartActionTypes } from "../actions/cart/cart.types";
 
 const INITIAL_STATE = {
   hidden: true,
